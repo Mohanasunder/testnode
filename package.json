@@ -1,0 +1,38 @@
+{
+    "name": "aplx-hmw-css",
+    "version": "0.0.1",
+    "main": "build/index.js",
+    "description": "aplx-hmw-css description needs to be added.",
+    "repository": {
+        "url": "git+https://github.com/ApplexusLabsPrivate/aplx-hmw-css.git",
+        "type": "git"
+    },
+    "scripts": {
+        "dev": "nodemon --exec cross-env PORT=8000 NODE_ENV=development ts-node src/index.ts",
+        "build": "tsc -w"
+    },
+    "keywords": [],
+    "author": "Applexus",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/ApplexusLabsPrivate/aplx-hmw-css/issues"
+    },
+    "devDependencies": {
+        "@types/restify": "^7.2.3",
+        "cross-env": "^5.2.0",
+        "nodemon": "^1.18.3",
+        "ts-node": "^7.0.1",
+        "typescript": "^3.0.1",
+        "@types/mongodb": "^3.1.4",
+        "@types/mongoose": "^5.2.7",
+        "@types/node": "^10.7.0",
+        "reflect-metadata": "^0.1.12"
+    },
+    "dependencies": {
+        "aplx-hmw-security": "git+https://github.com/ApplexusLabsPrivate/aplx-hmw-security.git#1.1.0",
+        "aplx-hmw-server": "git+https://github.com/ApplexusLabsPrivate/aplx-hmw-server.git#1.1.0",
+        "mongoose": "^5.2.10",
+        "mongoose-timestamp": "^0.6.0"
+    },
+    "homePage": "https://github.com/ApplexusLabsPrivate/aplx-hmw-css#readme"
+}
