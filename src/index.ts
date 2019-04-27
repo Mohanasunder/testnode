@@ -16,7 +16,7 @@ import { CustomerGrievancesRoute } from './customer-grievances';
      DB_URL: devInstance
  });
 
- new ApiServer().start(8700, "dev", [
+ new ApiServer().start(8600, "dev", [
     new CustomerAccountRoute(),
     new StoresProductsRoute(),
     new CustomerWishlistRoute(),
