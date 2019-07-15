@@ -25,6 +25,7 @@ export class StoresProductsAplxController {
         });
     }
 
+    
     getCategories(parentCatID): Promise<any> {
         return new Promise((resolve, reject) => {
             try {
