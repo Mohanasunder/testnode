@@ -9,7 +9,7 @@ import { CustomerSchedulesRoute } from './customer-schedules';
 import { CustomerGrievancesRoute } from './customer-grievances';
 
 
- var devInstance = "postgres://mohan:Welcome@100@192.168.5.221:5432/simpleretail-groceries";
+ var devInstance = "postgres://mohan:mohan@192.168.5.4:5432/sr-groceries";
  
  ServerFactory.setWebConfig({
      applicationSource: ApplicationSource.APLX,
