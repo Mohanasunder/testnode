@@ -8,7 +8,6 @@ import { CustomerOrdersRoute } from './customer-orders';
 import { CustomerSchedulesRoute } from './customer-schedules';
 import { CustomerGrievancesRoute } from './customer-grievances';
 
-
  var devInstance = "postgres://mohan:mohan@192.168.5.9:5432/sr-groceries";
  
  ServerFactory.setWebConfig({
