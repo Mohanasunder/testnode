@@ -8,6 +8,7 @@ export class StoresProductsRoute implements Routes{
         const PATH = '/api/css/stores-products/';
 
         httpServer.get(PATH + 'get-stores', this.getStores.bind(this));
+        httpServer.get(PATH + 'get-stores1', this.getStores1.bind(this));
         httpServer.get(PATH + 'get-categories', this.getCategories.bind(this));
         httpServer.get(PATH + 'get-categories/:catId', this.getCategories.bind(this));
         httpServer.get(PATH + 'stores/:storeId/categories/:catId/items', this.getCategoryItems.bind(this));
@@ -22,6 +23,12 @@ export class StoresProductsRoute implements Routes{
         }, (err) => {
             res.send(400,err);
         });
+    }
+
+    async getStores1(req: Request, res: Response, next: Next) {
+        
+            res.send(200,{"res":"Success"});
+        
     }
 
     async getCategories(req: Request, res: Response, next: Next) {
